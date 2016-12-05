@@ -1,5 +1,4 @@
 prior_post_plot <- function(d, ...){
-   require(ggplot2)
    D1a <- data.frame(Model=d[, 1],
                      Probability=d$Prior,
                   Type="Prior")
