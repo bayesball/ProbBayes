@@ -18,7 +18,8 @@ spinner_plot <- function(regions, ...){
     annotate("text", x=1, y=locs,
              label=1:length(regions), size=12) +
     coord_polar(theta = "y", direction=1) +
-    theme(legend.position="none") + xlab("") + ylab("")
+    theme(legend.position="none") + xlab("") + ylab("") +
+    scale_fill_brewer(palette = "Set1")
   if (nargs() == 2)
     p <- p + ggtitle(...) + TH
   p
