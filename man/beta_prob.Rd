@@ -2,7 +2,7 @@
 \alias{beta_prob}
 
 \title{
-  Computes Areas Under a Beta Curve
+  Areas Under a Beta Curve
 }
 \description{
   Computes Areas Under a Beta Curve

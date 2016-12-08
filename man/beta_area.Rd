@@ -2,10 +2,10 @@
 \alias{beta_area}
 
 \title{
-  Computes Areas Under a Beta Curve
+  Displays Areas Under a Beta Curve
 }
 \description{
-  Computes Areas Under a Beta Curve
+  Computes and Displays Areas Under a Beta Curve
 }
 \usage{
   beta_area(lo, hi, shape_par)
