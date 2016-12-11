@@ -1,0 +1,22 @@
+## ----global_options, include=FALSE---------------------------------------
+knitr::opts_chunk$set(fig.width=6, fig.height=4, fig.path='Figs/',
+                      echo=TRUE, warning=FALSE, message=FALSE)
+
+## ------------------------------------------------------------------------
+quantile1 <- list(x = .7, p = .5)
+quantile2 <- list(x = .85, p = .9)
+(ab <- beta.select(quantile1, quantile2))
+
+## ------------------------------------------------------------------------
+beta_interval(.9, ab)
+
+## ------------------------------------------------------------------------
+beta_area(0, .75, ab)
+
+## ------------------------------------------------------------------------
+p <- rbeta(1000, ab[1], ab[2])
+ggplot(data.frame(p=p), aes(x=p)) +
+  geom_histogram(aes(y = ..density..), 
+                 fill="orange", color="black") + 
+  geom_density()
+
