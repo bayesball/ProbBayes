@@ -3,6 +3,8 @@ Type: Package
 Title: Teaching Bayesian Inference
 Version: 0.1.0
 Depends:  LearnBayes, ggplot2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
 Author: Jim Albert
 Maintainer: Jim Albert <albert@bgsu.edu>
 Description: Package includes several functions helpful for communicating basic tenets of Bayesian thinking.

@@ -2,30 +2,31 @@
 \alias{spinner_data}
 
 \title{
-  Simulates data from a spinner
+  Simulate random data from a spinner
 }
 \description{
-  Simulates data from a spinner with different regions
+  Simulate random data from a spinner
 }
 \usage{
   spinner_data(regions, nsim=1000)
 }
 \arguments{
   \item{regions}{
-    vector of integer areas for the spins 1, 2, ...
+    vector of integer values for the spins 1, 2, ...
   }
   \item{nsim}{
-    number of simulated spins
+    number of spins
   }
 }
 
 \value{
-  A vector of simulated spins from the spinner
+  A vector of random spins from the spinner
 }
 \author{
   Jim Albert
 }
 
 \examples{
-  spinner_data(c(1, 2, 2, 1), nsim=20)
+  sp <- c(2, 1, 1, 2)
+  spinner_data(sp, 10)
 }
