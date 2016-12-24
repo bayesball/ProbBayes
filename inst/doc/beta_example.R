@@ -14,7 +14,7 @@ beta_interval(.9, ab)
 beta_area(0, .75, ab)
 
 ## ------------------------------------------------------------------------
-p <- rbeta(1000, ab[1], ab[2])
+p <- beta_data(ab)
 ggplot(data.frame(p=p), aes(x=p)) +
   geom_histogram(aes(y = ..density..), 
                  fill="orange", color="black") + 
