@@ -32,6 +32,12 @@ quantile2 <- list(x = .85, p = .9)
 
 So the beta curve with shape parameters 8.13 and 3.67 match my prior information.
 
+Note:  There is a Shiny app in the TeachBayes package to facilitate the selection of a beta curve.  One uses sliders to input the prior median and prior 90th percentile and the app will show the beta curve that matches this information.
+
+One runs this Shiny app by typing
+
+ChooseBeta()
+
 ### Checking My Beta Curve
 
 To see if this is really a good representation of my prior beliefs, it is helpful to construct several graphs.
