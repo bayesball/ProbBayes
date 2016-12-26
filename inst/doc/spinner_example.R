@@ -1,5 +1,5 @@
 ## ----global_options, include=FALSE---------------------------------------
-knitr::opts_chunk$set(fig.width=12, fig.height=8, fig.path='Figs/',
+knitr::opts_chunk$set(fig.width=8, fig.height=5.33, fig.path='Figs/',
                       echo=TRUE, warning=FALSE, message=FALSE)
 
 ## ------------------------------------------------------------------------
@@ -11,10 +11,10 @@ s_reg_D <- c(1, 3, 3, 1)
 ## ------------------------------------------------------------------------
 library(TeachBayes)
 library(gridExtra)
-p1 <- spinner_plot(s_reg_A, "Spinner A")
-p2 <- spinner_plot(s_reg_B, "Spinner B")
-p3 <- spinner_plot(s_reg_C, "Spinner C")
-p4 <- spinner_plot(s_reg_D, "Spinner D")
+p1 <- spinner_plot2(s_reg_A, title="Spinner A")
+p2 <- spinner_plot2(s_reg_B, title="Spinner B")
+p3 <- spinner_plot2(s_reg_C, title="Spinner C")
+p4 <- spinner_plot2(s_reg_D, title="Spinner D")
 grid.arrange(p1, p2, p3, p4, nrow=2, ncol=2)
 
 ## ------------------------------------------------------------------------
