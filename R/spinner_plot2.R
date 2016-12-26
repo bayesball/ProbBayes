@@ -17,7 +17,11 @@ spinner_plot2 <- function(probs, ...){
    p <- ggplot(df, aes(1, y, fill=Spin)) +
    geom_bar(stat="identity") +
    coord_polar(theta = "y", direction=1) +
-     xlab("") + ylab("")
+     xlab("") + ylab("") +
+     theme(
+       axis.text.x = element_blank(),
+       axis.text.y = element_blank(),
+       axis.ticks = element_blank())
    if ("title" %in% names(args))
      p <- p + ggtitle(args$title) + TH
    p
