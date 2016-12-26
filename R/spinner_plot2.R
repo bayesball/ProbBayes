@@ -1,0 +1,24 @@
+spinner_plot2 <- function(probs, ...){
+   args <- list(...)
+   if("values" %in% names(args))
+     values <- args$values else
+     values <- 1:length(probs)
+   df <- data.frame(Spin=factor(values),
+                    y=probs)
+   TH <- theme(
+     plot.title = element_text(
+       colour = "blue",
+       size = 18,
+       hjust = 0.5,
+       vjust = 0.8,
+       angle = 0
+     )
+   )
+   p <- ggplot(df, aes(1, y, fill=Spin)) +
+   geom_bar(stat="identity") +
+   coord_polar(theta = "y", direction=1) +
+     xlab("") + ylab("")
+   if ("title" %in% names(args))
+     p <- p + ggtitle(args$title) + TH
+   p
+}
