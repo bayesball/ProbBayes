@@ -24,5 +24,5 @@
 }
 
 \examples{
-  spinner_plot(c(1, 2, 2, 1), "My Spinner")
+  prob_plot(data.frame(x=1:5, prob=c(.1, .2, .3, .3, .1)))
 }
