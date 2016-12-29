@@ -1,5 +1,5 @@
-\name{beta_area_quantile}
-\alias{beta_area_quantile}
+\name{beta_quantile}
+\alias{beta_quantile}
 
 \title{
   Displays a Quantile of a Beta Curve
@@ -8,7 +8,7 @@
   Displays a Quantile of a Beta Curve
 }
 \usage{
-  beta_area_quantile(prob, shape_par)
+  beta_quantile(prob, shape_par)
 }
 \arguments{
   \item{prob}{
