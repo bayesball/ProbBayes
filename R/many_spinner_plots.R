@@ -4,7 +4,7 @@ many_spinner_plots <- function(list_regions){
   Letters <- c("A", "B", "C", "D", "E", "F", "G", "H", "I")
   plots <- vector(mode = "list", length = n)
   for(j in 1:n){
-    plots[[j]] <- spinner_plot2(list_regions[[j]],
+    plots[[j]] <- spinner_plot(list_regions[[j]],
                        title=paste("Spinner", Letters[j]))
   }
   if (n == 2) rows.cols <- c(1, 2) else

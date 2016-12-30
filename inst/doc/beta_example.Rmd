@@ -25,6 +25,7 @@ In other words, my prior median is .7 and my prior 90th percentile is .85.
 The function beta.select will find the shape parameters of the beta curve that match these prior statements.  I specify each quantile with a list (x is the value and p is the probability corresponding to the quantile).
 
 ```{r}
+library(TeachBayes)
 quantile1 <- list(x = .7, p = .5)
 quantile2 <- list(x = .85, p = .9)
 (ab <- beta.select(quantile1, quantile2))

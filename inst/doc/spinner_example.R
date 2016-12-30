@@ -11,11 +11,8 @@ s_reg_D <- c(1, 3, 3, 1)
 ## ------------------------------------------------------------------------
 library(TeachBayes)
 library(gridExtra)
-p1 <- spinner_plot2(s_reg_A, title="Spinner A")
-p2 <- spinner_plot2(s_reg_B, title="Spinner B")
-p3 <- spinner_plot2(s_reg_C, title="Spinner C")
-p4 <- spinner_plot2(s_reg_D, title="Spinner D")
-grid.arrange(p1, p2, p3, p4, nrow=2, ncol=2)
+many_spinner_plots(list(s_reg_A, s_reg_B, 
+                        s_reg_C, s_reg_D))
 
 ## ------------------------------------------------------------------------
 (Prob <- spinner_likelihoods(list(s_reg_A, s_reg_B, s_reg_C, s_reg_D)))

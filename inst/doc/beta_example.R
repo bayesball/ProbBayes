@@ -3,6 +3,7 @@ knitr::opts_chunk$set(fig.width=6, fig.height=4, fig.path='Figs/',
                       echo=TRUE, warning=FALSE, message=FALSE)
 
 ## ------------------------------------------------------------------------
+library(TeachBayes)
 quantile1 <- list(x = .7, p = .5)
 quantile2 <- list(x = .85, p = .9)
 (ab <- beta.select(quantile1, quantile2))
