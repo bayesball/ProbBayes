@@ -2,13 +2,14 @@
 \alias{beta_prior_post}
 
 \title{
-  Prior-Posterior Plot of a Proportion
+  Plot of Two Beta Curves
 }
 \description{
-  Prior-Posterior Plot of a Proportion
+  Plot of Two Beta Curves
 }
 \usage{
-  beta_prior_post(prior_shapes, post_shapes)
+  beta_prior_post(prior_shapes, post_shapes,
+     label_1="Prior", label_2="Posterior")
 }
 \arguments{
   \item{prior_shapes}{
@@ -17,6 +18,8 @@
   \item{post_shapes}{
     vector of shape parameters of the beta posterior
   }
+  \item{label_1}{title for the first beta curve}
+  \item{label_2}{title for the second beta curve}
 }
 
 \value{
