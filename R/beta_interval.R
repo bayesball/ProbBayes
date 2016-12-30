@@ -13,9 +13,11 @@ beta_interval <- function(prob, shape_par){
   y0 <- dbeta(x0, shape_par[1], shape_par[2])
   xx <- c(LO, x0, HI, lo)
   yy <- c(0, y0, 0, 0)
+  betaprob <- diff(pbeta(c(lo, hi),
+                         shape_par[1], shape_par[2]))
   message <- paste("P(",
                    round(lo, 3), "< P < ", round(hi, 3), ") =",
-                   round(beta_prob(lo, hi, shape_par), 3))
+                   round(betaprob, 3))
   other_text <- paste("Beta(",shape_par[1], ", ",
                       shape_par[2], ")", sep="")
 

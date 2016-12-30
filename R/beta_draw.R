@@ -1,9 +1,4 @@
-beta_draw <- function(shape_pars, ...){
-  args <- list(...)
-  p <- ggplot(data.frame(x=c(0, 1)), aes(x)) +
-    stat_function(fun=dbeta, geom="line",
-                  args=list(shape1=shape_pars[1],
-                            shape2=shape_pars[2]))
+beta_draw <- function(shape_pars){
   TH <- theme(
     plot.title = element_text(
       colour = "blue",
@@ -13,7 +8,13 @@ beta_draw <- function(shape_pars, ...){
       angle = 0
     )
   )
-  if ("title" %in% names(args))
-    p <- p + ggtitle(args$title) + TH
-  p
+  Title <- paste("Beta(", shape_pars[1], ",",
+                 shape_pars[2], ") Curve")
+  ggplot(data.frame(x=c(0, 1)), aes(x)) +
+    stat_function(fun=dbeta, geom="line",
+                  color="red", size=2.5,
+                  args=list(shape1=shape_pars[1],
+                            shape2=shape_pars[2])) +
+      ggtitle(Title) + TH +
+     xlab("P") + ylab("Density")
 }

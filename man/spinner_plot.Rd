@@ -8,14 +8,14 @@
   Constructs a spinner with different regions
 }
 \usage{
-  spinner_plot(regions, ...)
+  spinner_plot(probs, ...)
 }
 \arguments{
-  \item{regions}{
-    vector of integer areas for the spins 1, 2, ...
+  \item{probs}{
+    vector of probabilities for the spins 1, 2, ...
   }
   \item{...}{
-    title for the plot
+    optional vector of values and title
   }
 }
 
@@ -27,5 +27,7 @@
 }
 
 \examples{
-  spinner_plot(c(1, 2, 2, 1), "My Spinner")
+  spinner_plot2(rep(.2, 5),
+         values=c("A", "B", "C", "D", "E"),
+         title="My Spinner")
 }
