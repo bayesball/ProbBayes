@@ -27,8 +27,7 @@
 }
 
 \examples{
-  lo <- .2
-  hi <- .4
+  prob <- 0.7
   parameters <- c(2, 5)
-  beta_prob(lo, hi, parameters)
+  beta_quantile(prob, parameters)
 }

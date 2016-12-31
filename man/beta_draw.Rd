@@ -8,10 +8,10 @@
   Draw a Beta Curve
 }
 \usage{
-  beta_draw(shape_pars)
+  beta_draw(shape_par)
 }
 \arguments{
-  \item{shape_pars}{
+  \item{shape_par}{
     vector of shape parameters of the beta curve
   }
   \item{...}{
