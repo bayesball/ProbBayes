@@ -14,7 +14,7 @@ prior <- prior.two.parameters(values, values)
 draw_two_p(prior)
 
 ## ------------------------------------------------------------------------
-two_p_summarize(prior)
+prob_plot(two_p_summarize(prior))
 
 ## ------------------------------------------------------------------------
 y1n1 <- c(10, 20)
@@ -27,7 +27,7 @@ post <- two_p_update(prior, y1n1, y2n2)
 draw_two_p(post)
 
 ## ------------------------------------------------------------------------
-two_p_summarize(post)
+prob_plot(two_p_summarize(post))
 
 ## ------------------------------------------------------------------------
 prior <- testing_prior(.05, .95, 10, .5)
@@ -36,7 +36,7 @@ prior <- testing_prior(.05, .95, 10, .5)
 draw_two_p(prior)
 
 ## ------------------------------------------------------------------------
-two_p_summarize(prior)
+prob_plot(two_p_summarize(prior))
 
 ## ------------------------------------------------------------------------
 y1n1 <- c(10, 20)
@@ -49,5 +49,5 @@ post <- two_p_update(prior, y1n1, y2n2)
 draw_two_p(post)
 
 ## ------------------------------------------------------------------------
-two_p_summarize(post)
+prob_plot(two_p_summarize(post))
 

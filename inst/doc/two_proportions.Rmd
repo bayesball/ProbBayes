@@ -28,14 +28,16 @@ values <- seq(.05, .95, by=.1)
 prior <- prior.two.parameters(values, values)
 ```
 
-Construct a graph of this distribution and summarize.
+Construct a graph of this distribution.
 
 ```{r}
 draw_two_p(prior)
 ```
 
+This finds the probability distribution of the difference in proportions p1 - p2.
+
 ```{r}
-two_p_summarize(prior)
+prob_plot(two_p_summarize(prior))
 ```
 
 Collect some data from two binomial samples.
@@ -58,7 +60,7 @@ draw_two_p(post)
 ```
 
 ```{r}
-two_p_summarize(post)
+prob_plot(two_p_summarize(post))
 ```
 
 ### Testing Prior
@@ -74,7 +76,7 @@ draw_two_p(prior)
 ```
 
 ```{r}
-two_p_summarize(prior)
+prob_plot(two_p_summarize(prior))
 ```
 
 Collect some data from two binomial samples.
@@ -97,5 +99,5 @@ draw_two_p(post)
 ```
 
 ```{r}
-two_p_summarize(post)
+prob_plot(two_p_summarize(post))
 ```

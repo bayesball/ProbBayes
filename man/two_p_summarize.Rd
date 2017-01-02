@@ -5,7 +5,7 @@
   Summaries of a probability matrix
 }
 \description{
-  Computes summaries of a probability matrix of two proportions
+  Computes posterior of difference P1 - P2 of a probability matrix of two proportions
 }
 \usage{
   two_p_summarize(prob_matrix)
@@ -17,7 +17,7 @@
 }
 
 \value{
-  data frame with variables P1.LT.P2, P1.EQ.P2, P1.GT.P2
+  data frame with variables diff12 and Prob
 }
 \author{
   Jim Albert
