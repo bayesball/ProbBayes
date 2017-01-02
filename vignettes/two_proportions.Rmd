@@ -1,0 +1,101 @@
+---
+title: "Two_Proportions"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to TeachBayes}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=6, 
+                      fig.height=4, fig.path='Figs/',
+                      echo=TRUE, warning=FALSE, message=FALSE)
+```
+
+The TeachBayes package has several functions to facilitate working with a discrete prior for two proportions.
+
+```{r}
+library(TeachBayes)
+```
+
+### Uniform Prior
+
+Start with a uniform prior on (p1, p2), where each proportion takes on values .05, .15, ..., .95.
+
+```{r}
+values <- seq(.05, .95, by=.1)
+prior <- prior.two.parameters(values, values)
+```
+
+Construct a graph of this distribution and summarize.
+
+```{r}
+draw_two_p(prior)
+```
+
+```{r}
+two_p_summarize(prior)
+```
+
+Collect some data from two binomial samples.
+
+```{r}
+y1n1 <- c(10, 20)
+y2n2 <- c(8, 24)
+```
+
+Update (find posterior):
+
+```{r}
+post <- two_p_update(prior, y1n1, y2n2)
+```
+
+Graph and summarize:
+
+```{r}
+draw_two_p(post)
+```
+
+```{r}
+two_p_summarize(post)
+```
+
+### Testing Prior
+
+```{r}
+prior <- testing_prior(.05, .95, 10, .5)
+```
+
+Construct a graph of this distribution and summarize.
+
+```{r}
+draw_two_p(prior)
+```
+
+```{r}
+two_p_summarize(prior)
+```
+
+Collect some data from two binomial samples.
+
+```{r}
+y1n1 <- c(10, 20)
+y2n2 <- c(8, 24)
+```
+
+Update (find posterior):
+
+```{r}
+post <- two_p_update(prior, y1n1, y2n2)
+```
+
+Graph and summarize:
+
+```{r}
+draw_two_p(post)
+```
+
+```{r}
+two_p_summarize(post)
+```
