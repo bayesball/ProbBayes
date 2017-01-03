@@ -22,7 +22,6 @@
 
   }
 }
-
 \value{
   If TEACH = TRUE, returns data frame that displays the mean, precision, and standard deviation for the prior, data, and posterior.  If TEACH = FALSE, returns a vector with posterior mean and standard deviation.
 }
