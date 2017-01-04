@@ -5,10 +5,11 @@
   Testing prior for two proportions
 }
 \description{
-  Constructs a discrete distribution for two proportions under a testing hypothesis
+  Constructs a discrete distribution for two proportions under a testing or uniform hypotheses
 }
 \usage{
-  testing_prior(lo=.1, hi=.9, np=9, pequal=0.5)
+  testing_prior(lo=.1, hi=.9, np=9,
+        pequal=0.5, uniform=FALSE)
 }
 \arguments{
   \item{lo}{
@@ -22,6 +23,9 @@
   }
   \item{pequal}{
     probability of the equality of the two proportions
+  }
+  \item{uniform}{
+    indicates if a uniform prior is desired
   }
 }
 

@@ -16,10 +16,9 @@
   }
   \item{data}{
     list with components the sample mean and the standard error of the estimate
+  }
   \item{TEACH}{
    logical variable indicating the form of the output
-  }
-
   }
 }
 \value{
