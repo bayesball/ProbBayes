@@ -14,7 +14,11 @@ many_normal_plots <- function(list_normal_par){
           data.frame(Model=labels[j],
                      y=x, f=dnorm(x, Means[j],
                                   SDs[j])))
-  ggplot(df, aes(y, f, group=Model, color=Model)) +
-    geom_line(size=1.5) +
-    scale_colour_manual(values = c("blue", "red"))
+  p <- ggplot(df, aes(y, f, group=Model, color=Model)) +
+    geom_line(size=1.5)
+  if(N == 2){
+    p <- p +
+      scale_colour_manual(values = c("blue", "red"))
+  }
+  p
 }
