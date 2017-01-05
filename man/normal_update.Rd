@@ -12,24 +12,24 @@
 }
 \arguments{
   \item{prior}{
-    list with components mean and sd of the normal prior
+    vector with components mean and sd of the normal prior
   }
   \item{data}{
-    list with components the sample mean and the standard error of the estimate
+    vector with components the sample mean and the standard error of the estimate
   }
-  \item{TEACH}{
+  \item{teach}{
    logical variable indicating the form of the output
   }
 }
 \value{
-  If TEACH = TRUE, returns data frame that displays the mean, precision, and standard deviation for the prior, data, and posterior.  If TEACH = FALSE, returns a vector with posterior mean and standard deviation.
+  If teach = TRUE, returns data frame that displays the mean, precision, and standard deviation for the prior, data, and posterior.  If teach = FALSE, returns a vector with posterior mean and standard deviation.
 }
 \author{
   Jim Albert
 }
 
 \examples{
-  prior <- list(mean=100, sd=10)
-  data <- list(mean=110, se=15)
+  prior <- c(100, 10)
+  data <- c(110, 15)
   normal_update(prior, data)
 }

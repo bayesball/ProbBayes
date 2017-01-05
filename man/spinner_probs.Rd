@@ -8,7 +8,7 @@
   Display probability distribution for a spinner
 }
 \usage{
-  spinner_prob(regions)
+  spinner_probs(regions)
 }
 \arguments{
   \item{regions}{

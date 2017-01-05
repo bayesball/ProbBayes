@@ -12,6 +12,7 @@ normal_draw <- function(normal_pars){
                  normal_pars[2], ") Curve")
   x_lo <- normal_pars[1] - 4 * normal_pars[2]
   x_hi <- normal_pars[1] + 4 * normal_pars[2]
+  x <- NULL
   ggplot(data.frame(x=c(x_lo, x_hi)), aes(x)) +
     stat_function(fun=dnorm, geom="line",
                   color="red", size=2.5,

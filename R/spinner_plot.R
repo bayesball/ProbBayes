@@ -3,8 +3,9 @@ spinner_plot <- function(probs, ...){
    if("values" %in% names(args))
      values <- args$values else
      values <- 1:length(probs)
-   df <- data.frame(Spin=factor(values),
-                    y=probs)
+   Spin <- factor(values)
+   y <- probs
+   df <- data.frame(Spin, y)
    TH <- theme(
      plot.title = element_text(
        colour = "blue",

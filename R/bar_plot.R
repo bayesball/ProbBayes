@@ -8,6 +8,7 @@ bar_plot <- function(y, ...){
       angle = 0
     )
   )
+  Y <- NULL
   p <- ggplot(data.frame(Y=y), aes(Y)) +
   geom_bar(width=0.5, fill="red") +
   ylab("Frequency")

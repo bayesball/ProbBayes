@@ -4,9 +4,10 @@ draw_two_p <- function(prob_matrix, ...){
   p2 <- as.numeric(dimnames(prob_matrix)[[2]])
   P1 <- rep(p1, length(p2))
   P2 <- rep(p2, each=length(p1))
-  df <- data.frame(P1, P2, PROB=as.vector(prob_matrix))
-  df$Type <- ifelse(df$P1 == df$P2, "P1 = P2",
-                    ifelse(df$P1 < df$P2, "P1 < P2", "P1 > P2"))
+  PROB <- as.vector(prob_matrix)
+  Type <- ifelse(P1 == P2, "P1 = P2",
+          ifelse(P1 < P2, "P1 < P2", "P1 > P2"))
+  df <- data.frame(P1, P2, PROB, Type)
   TH <- theme(
     plot.title = element_text(
       colour = "blue",
@@ -16,7 +17,7 @@ draw_two_p <- function(prob_matrix, ...){
       angle = 0
     )
   )
-  p <- ggplot(df, aes(P1, P2, size=PROB, color=Type)) +
+  p <- ggplot(data=df, aes(P1, P2, size=PROB, color=Type)) +
     geom_point()
   if ("title" %in% names(args))
     p <- p + ggtitle(args$title) + TH

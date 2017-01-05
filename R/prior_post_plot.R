@@ -1,11 +1,9 @@
 prior_post_plot <- function(d, ...){
-   D1a <- data.frame(Model=d[, 1],
-                     Probability=d$Prior,
-                  Type="Prior")
-   D1b <- data.frame(Model=d[, 1],
-                  Probability=d$Posterior,
-                  Type="Posterior")
-   D1 <- rbind(D1a, D1b)
+   N <- dim(d)[1]
+   Model <- rep(d[, 1], 2)
+   Probability <- c(d$Prior, d$Posterior)
+   Type <- c(rep("Prior", N), rep("Posterior", N))
+   D1 <- data.frame(Model, Probability, Type)
    p <- ggplot(D1, aes(Model, Probability, color=Type)) +
      geom_segment(aes(xend = Model, yend = 0), size = 10,
                lineend = "butt") +

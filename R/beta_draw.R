@@ -10,6 +10,7 @@ beta_draw <- function(shape_pars){
   )
   Title <- paste("Beta(", shape_pars[1], ",",
                  shape_pars[2], ") Curve")
+  x <- NULL
   ggplot(data.frame(x=c(0, 1)), aes(x)) +
     stat_function(fun=dbeta, geom="line",
                   color="red", size=2.5,

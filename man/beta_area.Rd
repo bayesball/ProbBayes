@@ -33,5 +33,5 @@
   lo <- .2
   hi <- .4
   parameters <- c(2, 5)
-  beta_prob(lo, hi, parameters)
+  beta_area(lo, hi, parameters)
 }

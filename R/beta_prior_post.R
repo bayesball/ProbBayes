@@ -10,6 +10,7 @@ beta_prior_post <- function(prior_shapes, post_shapes,
       angle = 0
     )
   )
+x <- NULL
 ggplot(data.frame(x=c(0, 1)), aes(x)) +
   stat_function(fun=dbeta, geom="line",
                 aes(color=label_1), size=1.5,

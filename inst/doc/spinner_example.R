@@ -10,7 +10,6 @@ s_reg_D <- c(1, 3, 3, 1)
 
 ## ------------------------------------------------------------------------
 library(TeachBayes)
-library(gridExtra)
 many_spinner_plots(list(s_reg_A, s_reg_B, 
                         s_reg_C, s_reg_D))
 

@@ -27,7 +27,7 @@
 }
 
 \examples{
-  spinner_plot2(rep(.2, 5),
+  spinner_plot(rep(.2, 5),
          values=c("A", "B", "C", "D", "E"),
          title="My Spinner")
 }
