@@ -2,7 +2,7 @@ Package: TeachBayes
 Type: Package
 Title: Teaching Bayesian Inference
 Version: 0.1.0
-Depends:  LearnBayes, ggplot2, gridExtra
+Depends:  LearnBayes, ggplot2, gridExtra, dplyr
 Suggests: knitr, rmarkdown, Shiny
 VignetteBuilder: knitr
 Author: Jim Albert
