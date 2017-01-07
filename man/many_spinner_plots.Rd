@@ -24,5 +24,7 @@
 }
 
 \examples{
-  spinner_plot(c(1, 2, 2, 1), "My Spinner")
+  regions1 <- c(1, 1, 1)
+  regions2 <- c(2, 1, 2, 1)
+  many_spinner_plots(list(regions1, regions2))
 }
