@@ -5,7 +5,7 @@ prior_post_plot <- function(d, ...){
    Type <- c(rep("Prior", N), rep("Posterior", N))
    D1 <- data.frame(Model, Probability, Type)
    p <- ggplot(D1, aes(Model, Probability, color=Type)) +
-     geom_segment(aes(xend = Model, yend = 0), size = 10,
+     geom_segment(aes(xend = Model, yend = 0), size = 15,
                lineend = "butt") +
      facet_wrap(~ Type, ncol=1)
    if(nargs()==2)
