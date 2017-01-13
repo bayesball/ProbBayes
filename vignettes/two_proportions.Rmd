@@ -2,7 +2,7 @@
 title: "Two_Proportions"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to TeachBayes}
+  %\VignetteIndexEntry{Two Proportions}
   %\VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8]{inputenc}
 ---
