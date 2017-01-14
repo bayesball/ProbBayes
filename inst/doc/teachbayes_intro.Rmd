@@ -137,7 +137,7 @@ beta_prior_post(c(4, 4), c(20, 10))
 
 ### Inference for a Mean
 
-(normal_area, normal_draw, normal_interval, normal_quantile, many_normal_plots)
+(normal_area, normal_draw, normal_interval, normal_quantile, many_normal_plots, normal_update)
 
 1.  Function `normal_area`  displays and computes a normal probability.
 
@@ -170,6 +170,19 @@ normal_quantile(.3, c(100, 10))
 
 ```{r}
 many_normal_plots(list(c(100, 10), c(110, 10), c(120, 10)))
+```
+
+6.  Function `normal_update` will give the posterior mean and standard deviation given the normal prior and the sample info.
+
+```{r}
+prior <- c(100, 10)
+ybar <- 120
+se <- 15
+normal_update(prior, c(ybar, se))
+```
+
+```{r}
+normal_update(prior, c(ybar, se), teach=TRUE)
 ```
 
 ### Inference for Two Proportions
