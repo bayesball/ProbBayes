@@ -24,8 +24,8 @@ library(TeachBayes)
 Start with a uniform prior on (p1, p2), where each proportion takes on values .05, .15, ..., .95.
 
 ```{r}
-values <- seq(.05, .95, by=.1)
-prior <- prior.two.parameters(values, values)
+prior <- testing_prior(.05, .95, 10,
+                       uniform=TRUE)
 ```
 
 Construct a graph of this distribution.
@@ -34,10 +34,11 @@ Construct a graph of this distribution.
 draw_two_p(prior)
 ```
 
-This finds the probability distribution of the difference in proportions p1 - p2.
+This finds the probability distribution of the difference in proportions p1 - p2, and plots the distribution.
 
 ```{r}
-prob_plot(two_p_summarize(prior))
+(diff_dist <- two_p_summarize(prior))
+prob_plot(diff_dist)
 ```
 
 Collect some data from two binomial samples.
@@ -66,7 +67,7 @@ prob_plot(two_p_summarize(post))
 ### Testing Prior
 
 ```{r}
-prior <- testing_prior(.05, .95, 10, .5)
+prior <- testing_prior(.05, .95, 10, pequal=0.5)
 ```
 
 Construct a graph of this distribution and summarize.
