@@ -28,5 +28,5 @@
 
 \examples{
   sp <- c(2, 1, 1, 2)
-  spinner_data(sp, 10)
+  spinner_data(sp, nsim=20)
 }

@@ -27,6 +27,6 @@
 }
 
 \examples{
-  sp <- c(2, 1, 1, 2)
-  spinner_data(sp, 10)
+  shape_par <- c(12, 8)
+  beta_data(shape_par, 10)
 }

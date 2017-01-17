@@ -23,7 +23,7 @@
 }
 
 \value{
- Displays the beta prior and beta posterior curves
+ Displays the two beta curves on the same panel
 }
 \author{
   Jim Albert

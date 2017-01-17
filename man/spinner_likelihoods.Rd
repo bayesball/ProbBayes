@@ -17,12 +17,14 @@
 }
 
 \value{
-  A matrix where each row corresponds to the outcome probabiliteis for one spinner.
+  A matrix where each row corresponds to the outcome probabilities for one spinner.
 }
 \author{
   Jim Albert
 }
 
 \examples{
-  spinner_likelihoods(list(c(2, 1, 1), c(1, 1, 1, 1)))
+  sp1 <- c(2, 1, 1)
+  sp2 <- c(1, 1, 1, 1)
+  spinner_likelihoods(list(sp1, sp2))
 }

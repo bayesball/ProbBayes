@@ -22,7 +22,7 @@
   }
 }
 \value{
-  If teach = TRUE, returns data frame that displays the mean, precision, and standard deviation for the prior, data, and posterior.  If teach = FALSE, returns a vector with posterior mean and standard deviation.
+  If teach = TRUE, returns data frame that displays the mean, precision, and standard deviation for the prior, data, and posterior.  If teach = FALSE, returns a vector with mean and standard deviation of the posterior.
 }
 \author{
   Jim Albert
@@ -32,4 +32,5 @@
   prior <- c(100, 10)
   data <- c(110, 15)
   normal_update(prior, data)
+  normal_update(prior, data, teach=TRUE)
 }

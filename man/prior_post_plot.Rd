@@ -12,7 +12,7 @@
 }
 \arguments{
   \item{d}{
-    data frame where the first column are the model values, and the columns Prior and Posterior
+    data frame where the first column are the model values, and columns named Prior and Posterior
   }
   \item{...}{
      gives an alternative label for the x axis
@@ -20,7 +20,7 @@
 }
 
 \value{
-  Constructs a comparative plot of the prior and posterior distributions
+  Constructs a comparative plot of the prior and posterior distributions using separate panels.
 }
 \author{
   Jim Albert

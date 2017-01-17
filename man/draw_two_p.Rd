@@ -12,7 +12,7 @@
 }
 \arguments{
   \item{prob_matrix}{
-    matrix of probabilities with labels the values of the proportions
+    matrix of probabilities of two proportions with the rows and columns labeled by the values
   }
   \item{...}{
     other arguments such as the title of the plot

@@ -5,7 +5,7 @@
   Constructs a graph of a probability distribution
 }
 \description{
-  Constructs a graph of a probability distribution
+  Constructs a graph of a discrete probability distribution
 }
 \usage{
   prob_plot(d)
@@ -24,5 +24,7 @@
 }
 
 \examples{
-  prob_plot(data.frame(x=1:5, prob=c(.1, .2, .3, .3, .1)))
+  probability_df <- data.frame(x=1:5,
+         Probability=c(.1, .2, .3, .3, .1))
+  prob_plot(probability_df)
 }

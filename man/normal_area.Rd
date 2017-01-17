@@ -2,10 +2,10 @@
 \alias{normal_area}
 
 \title{
-  Displays Areas Under a Normal Curve
+  Displays Area Under a Normal Curve
 }
 \description{
-  Computes and Displays Areas Under a Normal Curve
+  Computes and Displays Area Under a Normal Curve
 }
 \usage{
   normal_area(lo, hi, normal_pars)

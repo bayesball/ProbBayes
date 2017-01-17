@@ -24,5 +24,7 @@
 }
 
 \examples{
- many_normal_plots(list(c(100, 15), c(110, 15)))
+ normal_parameters <- list(c(100, 15),
+     c(110, 15), c(120, 15))
+ many_normal_plots(normal_parameters)
 }

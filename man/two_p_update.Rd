@@ -31,5 +31,7 @@
 
 \examples{
   prior <- testing_prior()
-  two_p_update(prior, c(3, 10), c(8, 20))
+  first_sample <- c(3, 10)
+  second_sample <- c(8, 20)
+  two_p_update(prior, first_sample, second_sample)
 }

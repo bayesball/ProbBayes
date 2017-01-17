@@ -5,7 +5,7 @@
   Probability Interval for a Normal Curve
 }
 \description{
-  Computes Probability Interval for a Normal Curve
+  Computes "equal-tails" probability interval for a normal curve
 }
 \usage{
   normal_interval(prob, normal_pars)
@@ -28,5 +28,6 @@
 
 \examples{
   parameters <- c(2, 0.5)
-  normal_interval(.5, parameters)
+  prob_content <- 0.5
+  normal_interval(prob_content, parameters)
 }

@@ -20,14 +20,18 @@
 }
 
 \value{
- Displays the quantile of a beta curve corresponding to probability prob
+ Displays the quantile of a beta curve corresponding to the probability value
 }
 \author{
   Jim Albert
 }
 
 \examples{
-  prob <- 0.7
+  # find the .50 quantile (the median)
+  prob <- 0.5
   parameters <- c(2, 5)
+  beta_quantile(prob, parameters)
+  # find the .90 quantile (90th percentile)
+  prob <- 0.9
   beta_quantile(prob, parameters)
 }

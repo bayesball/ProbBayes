@@ -12,7 +12,7 @@
 }
 \arguments{
   \item{regions}{
-    vector of integer values for the spins 1, 2, ...
+    vector of positive values for the spins 1, 2, ...
   }
 }
 

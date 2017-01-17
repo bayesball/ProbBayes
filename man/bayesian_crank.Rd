@@ -5,8 +5,7 @@
   Computes Posterior Probabilities for Discrete Models
 }
 \description{
-  Given a data table with columns Prior and Likelihood, computes
-  posterior probabilities
+  Given a data table with columns Prior and Likelihood, computes posterior probabilities
 }
 \usage{
   bayesian_crank(d)

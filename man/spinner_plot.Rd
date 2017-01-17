@@ -27,7 +27,10 @@
 }
 
 \examples{
-  spinner_plot(rep(.2, 5),
+  probs <- rep(.2, 5)
+  spinner_plot(probs,
          values=c("A", "B", "C", "D", "E"),
          title="My Spinner")
+  # probs does not need to be noramalized
+  spinner_plot(c(1, 2, 1, 2))
 }

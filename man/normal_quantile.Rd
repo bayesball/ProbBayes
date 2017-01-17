@@ -20,7 +20,7 @@
 }
 
 \value{
- Displays the quantile of a normal curve corresponding to probability prob
+ Displays the quantile of a normal curve corresponding to a specific probability value
 }
 \author{
   Jim Albert
@@ -28,5 +28,6 @@
 
 \examples{
   parameters <- c(100, 10)
-  normal_quantile(.7, parameters)
+  prob_value <- 0.7
+  normal_quantile(prob_value, parameters)
 }
