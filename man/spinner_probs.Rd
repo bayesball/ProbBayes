@@ -17,7 +17,7 @@
 }
 
 \value{
-  Data frame with variables Spin and Prob
+  Data frame with variables Region and Prob
 }
 \author{
   Jim Albert
