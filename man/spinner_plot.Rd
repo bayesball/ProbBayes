@@ -31,6 +31,6 @@
   spinner_plot(probs,
          values=c("A", "B", "C", "D", "E"),
          title="My Spinner")
-  # probs does not need to be noramalized
+  # probs does not need to be normalized
   spinner_plot(c(1, 2, 1, 2))
 }
