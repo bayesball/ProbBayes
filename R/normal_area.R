@@ -1,4 +1,5 @@
 normal_area <- function(lo, hi, normal_pars){
+  normal_pars <- unlist(normal_pars)
   x_lo <- normal_pars[1] - 4 * normal_pars[2]
   x_hi <- normal_pars[1] + 4 * normal_pars[2]
   x <- seq(x_lo, x_hi, length.out=100)

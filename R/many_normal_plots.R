@@ -1,5 +1,7 @@
 many_normal_plots <- function(list_normal_par){
   N <- length(list_normal_par)
+  for(j in 1:N)
+    list_normal_par[[j]] <- unlist(list_normal_par[[j]])
   Means <- sapply(list_normal_par, function(y) y[1])
   SDs <- sapply(list_normal_par, function(y) y[2])
   Means <- round(Means, 1)

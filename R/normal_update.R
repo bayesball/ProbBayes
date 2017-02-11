@@ -1,4 +1,5 @@
 normal_update <- function(prior, data, teach=FALSE){
+  prior <- unlist(prior)
   prior_mean <- prior[1]
   prior_sd <- prior[2]
   data_mean <- data[1]

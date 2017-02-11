@@ -1,4 +1,5 @@
 normal_draw <- function(normal_pars){
+  normal_pars <- unlist(normal_pars)
   TH <- theme(
     plot.title = element_text(
       colour = "blue",
