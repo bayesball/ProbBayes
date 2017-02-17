@@ -8,17 +8,17 @@
   Computes posterior distribution of two proportions with a discrete prior
 }
 \usage{
-  two_p_update(prior, y1n1, y2n2)
+  two_p_update(prior, s1f1, s2f2)
 }
 \arguments{
   \item{prior}{
     prior probability matrix where the rows and columns are labeled with the values of the proportions
   }
-  \item{y1n1}{
-  number of successes and sample size from first sample
+  \item{s1f1}{
+  number of successes and number of failures from first sample
   }
-   \item{y2n2}{
-  number of successes and sample size from second sample
+   \item{s2f2}{
+  number of successes and number of failures from second sample
   }
 }
 
