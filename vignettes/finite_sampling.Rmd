@@ -1,0 +1,56 @@
+---
+title: "Sampling from a Box of Two Types of Colored Balls"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Finite Sampling Example}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=6, fig.height=4, fig.path='Figs/',
+                      echo=TRUE, warning=FALSE, message=FALSE)
+```
+
+Here is a standard sampling-without-replacement problem.  Suppose we have $N$ balls in a box, $B$ that are black and the remaining $W = N - B$ balls are white.
+
+You sample $n$ balls from the box and $b$ turn out to be black.  What have you learned about the number $B$ that are black in the box?
+
+This is a Bayes' rule problem.  We'll illustrate it for the case where $N = 50$.
+
+1.  (Prior) First the number of black balls in the box $B$ could be any value from 0 to 50.  We place a uniform prior on the values 0, 1, 2, ..., 50.
+
+```{r}
+library(TeachBayes)
+bayes_df <- data.frame(B=0:50, Prior=rep(1/51, 51))
+```
+
+2.  (Data) We take a sample of $n = 10$ balls without replacement and observe that the number of black balls is $b = 3$.  The likelihood is the probability of this outcome, expressed as a function of $B$.  I use the special function `dsampling()`.
+
+```{r}
+sample_b <- 3
+pop_N <- 50
+sample_n <- 10
+bayes_df$Likelihood <- dsampling(sample_b, pop_N, 
+                                 bayes_df$B, sample_n)
+```
+
+3.  Last we turn the Bayesian crank using the `bayesian_crank()` function and obtain the posterior probabilities for $B$.
+
+```{r}
+bayes_df <- bayesian_crank(bayes_df)
+```
+
+I compare the prior and posterior probabilities for $B$ graphically.
+
+```{r}
+prior_post_plot(bayes_df)
+```
+
+Here is a 90 percent probability interval for $B$:
+
+```{r}
+library(dplyr)
+discint(select(bayes_df, B, Posterior), 0.90)
+```
+
