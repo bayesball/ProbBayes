@@ -1,6 +1,7 @@
 exportPattern("^[[:alpha:]]+")
 importFrom("stats", "dbeta", "dbinom", "dnorm", "pbeta", "pnorm",
-             "qbeta", "qnorm", "rbeta", "weighted.mean")
+             "qbeta", "qnorm", "rbeta", "weighted.mean",
+           "dhyper")
 importFrom("LearnBayes", "beta.select", "normal.select")
 importFrom("gridExtra", "grid.arrange")
 import("dplyr", "ggplot2", "shiny")
