@@ -29,6 +29,7 @@
 \examples{
   s <- spinner_data(c(1, 2, 2, 1), nsim=100)
   bar_plot(s, "Spinner Data")
-  y <- c(rep("a", 10), rep("b", 5), rep("c", 8))
+  y <- c(rep("a", 10), rep("b", 5),
+         rep("c", 8), rep("d", 4))
   bar_plot(y)
 }
