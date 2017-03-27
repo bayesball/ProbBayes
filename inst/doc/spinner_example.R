@@ -33,3 +33,8 @@ bayes_table <- data.frame(Model=models,
 ## ------------------------------------------------------------------------
 prior_post_plot(bayes_table)
 
+## ------------------------------------------------------------------------
+spinner_bayes(list(s_reg_A, s_reg_B, s_reg_C, s_reg_D),
+              prior = c(1/4, 1/4, 1/4, 1/4),
+              spins)
+
