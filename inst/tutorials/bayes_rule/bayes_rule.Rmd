@@ -55,7 +55,8 @@ bayes_df <- data.frame(Model =
 Add a new variable `Likelihood` to the data frame `bayes_df` consisting of the likelihoods, the probabilities of observing a 3 (blue) for each of the two spinners.
 
 ```{r likelihood, exercise=TRUE, exercise.setup = "prepare-bayesdf"}
-
+bayes_df$Likelihood <- c()
+bayes_df
 ```
 
 ## The Posterior
@@ -78,7 +79,7 @@ bayes_df <- data.frame(Model =
 
 ### Exercise
 
-Use the `bayesian_crank` function on `bayes_df` to compute the updated probabilities of the spinners.
+Use the `bayesian_crank` function with argument `bayes_df` to compute the updated probabilities of the spinners.
 
 ```{r posterior, exercise=TRUE, exercise.setup = "prepare-bayesdf2"}
 
@@ -97,7 +98,7 @@ bayes_df <- bayesian_crank(bayes_df)
 
 ### Exercise
 
-The Prior and Posterior probabilities are stored in the data frame `bayes_df`.  Use the `prior_post_plot` function to compare the prior and posterior probabilities of the two spinners.
+The Prior and Posterior probabilities are stored in the data frame `bayes_df`.  Use the `prior_post_plot` function with argument `bayes_df` to compare the prior and posterior probabilities of the two spinners.
 
 ```{r graph, exercise=TRUE, exercise.setup = "prepare-bayesdf3"}
 
