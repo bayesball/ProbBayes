@@ -1,0 +1,104 @@
+---
+title: "Bayes' Rule"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE,
+            warning=FALSE, message=FALSE)
+```
+
+## Models and Prior
+
+Suppose we have two spinners -- one has four regions with areas 2, 1, 1, 2, and the second has four regions with areas 1, 2, 2, 1.  Suppose you choose one spinner at random and observe its spin.  Based on this spin you are going to revise your probabilities using Bayes' rule.
+
+Here are pictures of the two spinners:
+
+```{r}
+library(TeachBayes)
+spinners <- list(c(2, 1, 1, 2), c(1, 2, 2, 1))
+many_spinner_plots(spinners)
+```
+
+### Exercise
+
+You first choose one of the two spinners at random.  Create a new data frame `bayes_df` with two variables: `Model` contains the names of the two spinners, and `Prior` contains your initial probabilities of the spinner you chose. 
+
+
+```{r prior, exercise=TRUE}
+bayes_df <- data.frame(Model = 
+                  paste("Spinner", c("A", "B")),
+                       Prior = c())
+bayes_df
+```
+
+## The Likelihoods
+
+Next suppose you spin the unknown spinner once and you observe a 3 (in the blue region).
+
+```{r}
+library(TeachBayes)
+spinners <- list(c(2, 1, 1, 2), c(1, 2, 2, 1))
+many_spinner_plots(spinners)
+```
+
+```{r prepare-bayesdf}
+bayes_df <- data.frame(Model = 
+                  paste("Spinner", c("A", "B")),
+                       Prior = c(0.5, 0.5))
+```
+
+### Exercise
+
+Add a new variable `Likelihood` to the data frame `bayes_df` consisting of the likelihoods, the probabilities of observing a 3 (blue) for each of the two spinners.
+
+```{r likelihood, exercise=TRUE, exercise.setup = "prepare-bayesdf"}
+
+```
+
+## The Posterior
+
+Now we can update our probabilities of the two spinners by using Bayes' rule.
+
+```{r}
+library(TeachBayes)
+spinners <- list(c(2, 1, 1, 2), c(1, 2, 2, 1))
+many_spinner_plots(spinners)
+```
+
+```{r prepare-bayesdf2}
+library(TeachBayes)
+bayes_df <- data.frame(Model = 
+                  paste("Spinner", c("A", "B")),
+                       Prior = c(0.5, 0.5),
+                  Likelihood = c(1/6, 1/3))
+```
+
+### Exercise
+
+Use the `bayesian_crank` function on `bayes_df` to compute the updated probabilities of the spinners.
+
+```{r posterior, exercise=TRUE, exercise.setup = "prepare-bayesdf2"}
+
+```
+
+## Compare Prior and Posterior
+
+```{r prepare-bayesdf3}
+library(TeachBayes)
+bayes_df <- data.frame(Model = 
+                  paste("Spinner", c("A", "B")),
+                       Prior = c(0.5, 0.5),
+                  Likelihood = c(1/6, 1/3))
+bayes_df <- bayesian_crank(bayes_df)
+```
+
+### Exercise
+
+The Prior and Posterior probabilities are stored in the data frame `bayes_df`.  Use the `prior_post_plot` function to compare the prior and posterior probabilities of the two spinners.
+
+```{r graph, exercise=TRUE, exercise.setup = "prepare-bayesdf3"}
+
+```
