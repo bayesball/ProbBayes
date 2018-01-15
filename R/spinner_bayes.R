@@ -2,7 +2,8 @@ spinner_bayes <- function(list_regions,
                           prior,
                           data,
                           plot=TRUE){
-  Letters <- c("A", "B", "C", "D", "E", "F", "G", "H", "I")
+  Letters <- c("A", "B", "C", "D", "E",
+               "F", "G", "H", "I")
   n <- length(list_regions)
   prior <- abs(prior) / sum(abs(prior))
   bayes_df <- data.frame(Spinner = Letters[1:n],

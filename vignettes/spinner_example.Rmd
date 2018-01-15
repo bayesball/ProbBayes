@@ -68,13 +68,5 @@ Graph the prior and posterior probabilities.  Hopefully Spinner B will have a hi
 prior_post_plot(bayes_table)
 ```
 
-### Summary Function
 
-The `spinner_bayes` function will implement the Bayes' rule calculations in a single line.
-
-```{r}
-spinner_bayes(list(s_reg_A, s_reg_B, s_reg_C, s_reg_D),
-              prior = c(1/4, 1/4, 1/4, 1/4),
-              spins)
-```
 
