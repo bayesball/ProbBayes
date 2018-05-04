@@ -2,6 +2,7 @@ Package: TeachBayes
 Type: Package
 Title: Teaching Bayesian Inference
 Version: 1.02
+Authors@R: c(person("Jim Albert", "Developer"))
 Depends:  LearnBayes, ggplot2, gridExtra, dplyr, shiny
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
