@@ -1,4 +1,4 @@
-prior_post_plot <- function(d, ...){
+prior_post_plot <- function(d, Color = "orange"){
    N <- dim(d)[1]
    Size <- 100 / N
    Size <- ifelse(Size > 15, 15, Size)
@@ -7,11 +7,9 @@ prior_post_plot <- function(d, ...){
    Probability <- c(d$Prior, d$Posterior)
    Type <- c(rep("Prior", N), rep("Posterior", N))
    D1 <- data.frame(Model, Probability, Type)
-   p <- ggplot(D1, aes(Model, Probability, color=Type)) +
+   ggplot(D1, aes(Model, Probability)) +
      geom_segment(aes(xend = Model, yend = 0), size = Size,
-               lineend = "butt") +
-     facet_wrap(~ Type, ncol=1)
-   if(nargs()==2)
-      p <- p + xlab(...)
-   p
+               lineend = "butt", color = Color) +
+     facet_wrap(~ Type, ncol=1) +
+      theme(legend.position = "none")
 }

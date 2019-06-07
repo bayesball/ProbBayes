@@ -1,5 +1,6 @@
 normal_quantile <- function(prob, normal_pars,
-                            text = TRUE){
+                            text = TRUE,
+                            Color = "orange"){
   normal_pars <- unlist(normal_pars)
   x_lo <- normal_pars[1] - 4 * normal_pars[2]
   x_hi <- normal_pars[1] + 4 * normal_pars[2]
@@ -34,7 +35,7 @@ normal_quantile <- function(prob, normal_pars,
     )
   )
   p <- p + geom_polygon(data=data.frame(xx, yy), aes(xx, yy),
-                   fill="orange")  +
+                   fill=Color)  +
     ggtitle(message) +
     xlab("M") + ylab("Density") + TH
   if(text == TRUE) p <- p +

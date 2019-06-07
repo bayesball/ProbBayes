@@ -1,4 +1,5 @@
-beta_area <- function(lo, hi, shape_par){
+beta_area <- function(lo, hi, shape_par,
+                      Color = "orange"){
   x <- seq(0, 1, by=.001)
   dx <- dbeta(x, shape_par[1], shape_par[2])
   p <- ggplot(data.frame(x=x, dx=dx), aes(x, dx)) +
@@ -30,10 +31,10 @@ beta_area <- function(lo, hi, shape_par){
     )
   )
   p + geom_polygon(data=data.frame(xx, yy), aes(xx, yy),
-                   fill="orange")  +
+                   fill=Color)  +
     ggtitle(message) +
     xlab("P") + ylab("Density") + TH +
     annotate("text", x = x_text, y = y_text,
              label = other_text,
-             size=6, color="blue")
+             size=6, color="black")
 }

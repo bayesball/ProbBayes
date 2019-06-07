@@ -17,7 +17,7 @@ many_normal_plots <- function(list_normal_par){
     Model <- labels[j]
     df <- rbind(df, data.frame(Model, y, f))
   }
-  p <- ggplot(df, aes(y, f, group=Model, color=Model)) +
+  p <- ggplot(df, aes(y, f, group=Model, linetype=Model)) +
     geom_line(size=1.5)
   if(N == 2){
     p <- p +

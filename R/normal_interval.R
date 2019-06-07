@@ -1,4 +1,5 @@
-normal_interval <- function(prob, normal_pars){
+normal_interval <- function(prob, normal_pars,
+                            Color = "orange"){
   normal_pars <- unlist(normal_pars)
   x_lo <- normal_pars[1] - 4 * normal_pars[2]
   x_hi <- normal_pars[1] + 4 * normal_pars[2]
@@ -38,7 +39,7 @@ normal_interval <- function(prob, normal_pars){
     )
   )
   p + geom_polygon(data=data.frame(xx, yy), aes(xx, yy),
-                   fill="orange")  +
+                   fill=Color)  +
     ggtitle(message) +
     xlab("M") + ylab("Density") + TH +
     annotate("text", x = x_text, y = y_text,

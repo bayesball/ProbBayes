@@ -1,9 +1,10 @@
-prob_plot <- function(d){
+prob_plot <- function(d,
+                      Color = "red",
+                      Size = 1.5){
   N <- dim(d)[1]
 #  Size <- 100 / N
 #  Size <- ifelse(Size > 15, 15, Size)
 #  Size <- ifelse(Size < 2, 2, Size)
-  Size = 1.5
   TH <- theme(
     plot.title = element_text(
       colour = "blue",
@@ -18,6 +19,6 @@ prob_plot <- function(d){
     geom_segment(aes_string(xend = colnames(d)[1], yend = 0),
                  size = Size,
                  lineend = "butt",
-                 color="red") + TH
+                 color=Color) + TH
   p
 }
