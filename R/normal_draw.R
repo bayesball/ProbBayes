@@ -1,4 +1,5 @@
-normal_draw <- function(normal_pars){
+normal_draw <- function(normal_pars,
+                        Color = "red"){
   normal_pars <- unlist(normal_pars)
   TH <- theme(
     plot.title = element_text(
@@ -16,7 +17,7 @@ normal_draw <- function(normal_pars){
   x <- NULL
   ggplot(data.frame(x=c(x_lo, x_hi)), aes(x)) +
     stat_function(fun=dnorm, geom="line",
-                  color="red", size=2.5,
+                  color=Color, size=2.5,
                   args=list(mean=normal_pars[1],
                             sd=normal_pars[2])) +
       ggtitle(Title) + TH +

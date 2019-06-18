@@ -16,7 +16,7 @@ spinner_plot <- function(probs, ...){
      )
    )
    p <- ggplot(df, aes(1, y, fill=Region)) +
-   geom_bar(stat="identity") +
+   geom_bar(stat="identity", color = "black") +
    coord_polar(theta = "y", direction=1) +
      xlab("") + ylab("") +
      theme(
