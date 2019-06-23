@@ -8,7 +8,7 @@
   Displays a Quantile of a Normal Curve
 }
 \usage{
-  normal_quantile(prob, normal_pars)
+  normal_quantile(prob, normal_pars, Color = "orange")
 }
 \arguments{
   \item{prob}{
@@ -16,6 +16,9 @@
   }
   \item{normal_pars}{
     vector of mean and standard deviation of the normal curve
+  }
+  \item{Color}{
+  color of shading in plot
   }
 }
 

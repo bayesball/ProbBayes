@@ -17,7 +17,7 @@
 }
 
 \value{
- Displays the normal curves on a single panel with labels
+ Displays the normal curves on a single panel
 }
 \author{
   Jim Albert

@@ -8,7 +8,7 @@
   Computes and Displays Areas Under a Beta Curve
 }
 \usage{
-  beta_area(lo, hi, shape_par)
+  beta_area(lo, hi, shape_par, Color = "orange")
 }
 \arguments{
   \item{lo}{
@@ -19,6 +19,9 @@
   }
   \item{shape_par}{
     vector of shape parameters of the beta curve
+  }
+  \item{Color}{
+    color of shading in the graph
   }
 }
 

@@ -8,7 +8,7 @@
   Displays a Quantile of a Beta Curve
 }
 \usage{
-  beta_quantile(prob, shape_par)
+  beta_quantile(prob, shape_par, Color = "orange")
 }
 \arguments{
   \item{prob}{
@@ -16,6 +16,9 @@
   }
   \item{shape_par}{
     vector of shape parameters of the beta curve
+  }
+   \item{Color}{
+    color of shading in the graph
   }
 }
 

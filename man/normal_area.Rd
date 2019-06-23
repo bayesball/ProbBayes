@@ -8,7 +8,7 @@
   Computes and Displays Area Under a Normal Curve
 }
 \usage{
-  normal_area(lo, hi, normal_pars)
+  normal_area(lo, hi, normal_pars, Color = "orange")
 }
 \arguments{
   \item{lo}{
@@ -19,6 +19,9 @@
   }
   \item{normal_pars}{
     vector of mean and standard deviation of the normal curve
+  }
+  \item{Color}{
+  color of shading in plot
   }
 }
 

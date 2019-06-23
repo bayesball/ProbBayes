@@ -1,5 +1,5 @@
 bayesian_crank <- function(d){
-  mutate(d,
-         Product = Likelihood * Prior,
-         Posterior = Product / sum(Product))
+  d$Product <- d$Likelihood * d$Prior
+  d$Posterior <- d$Product / sum(d$Product)
+  d
 }

@@ -1,6 +1,6 @@
 normal_quantile <- function(prob, normal_pars,
-                            text = TRUE,
                             Color = "orange"){
+  text = TRUE
   normal_pars <- unlist(normal_pars)
   x_lo <- normal_pars[1] - 4 * normal_pars[2]
   x_hi <- normal_pars[1] + 4 * normal_pars[2]

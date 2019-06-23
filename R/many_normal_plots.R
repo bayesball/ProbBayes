@@ -1,5 +1,4 @@
-many_normal_plots <- function(list_normal_par,
-                              Color = "black"){
+many_normal_plots <- function(list_normal_par){
   N <- length(list_normal_par)
   for(j in 1:N)
     list_normal_par[[j]] <- unlist(list_normal_par[[j]])
@@ -19,7 +18,7 @@ many_normal_plots <- function(list_normal_par,
     df <- rbind(df, data.frame(Model, y, f))
   }
   p <- ggplot(df, aes(y, f, group=Model)) +
-    geom_line(size=1.5, color = Color)
+    geom_line(size=1.5)
   if(N == 2){
     p <- p +
       scale_colour_manual(values = c("blue", "red"))

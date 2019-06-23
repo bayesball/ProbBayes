@@ -8,11 +8,17 @@
   Constructs a graph of a discrete probability distribution
 }
 \usage{
-  prob_plot(d)
+  prob_plot(d, Color = "red", Size = 1.5)
 }
 \arguments{
   \item{d}{
     data frame where the first two columns are the variable and associated probabilities
+  }
+  \item{Color}{
+  color of line in plot
+  }
+  \item{Size}{
+  width of line in plot
   }
 }
 

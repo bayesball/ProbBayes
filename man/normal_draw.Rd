@@ -8,11 +8,14 @@
   Draws a Normal Curve
 }
 \usage{
-  normal_draw(normal_pars)
+  normal_draw(normal_pars, Color = "red")
 }
 \arguments{
   \item{normal_pars}{
     vector of mean and standard deviation of the normal curve
+  }
+  \item{Color}{
+  color of line in plot
   }
 }
 

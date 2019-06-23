@@ -8,14 +8,14 @@
   Graphs prior and posterior probabilities from a discrete Bayesian model
 }
 \usage{
-  prior_post_plot(d,...)
+  prior_post_plot(d, Color = "orange")
 }
 \arguments{
   \item{d}{
     data frame where the first column are the model values, and columns named Prior and Posterior
   }
-  \item{...}{
-     gives an alternative label for the x axis
+  \item{Color}{
+     fill color for the bars
   }
 }
 
@@ -33,5 +33,5 @@ y <- 5
 n <- 10
 df$Likelihood <- dbinom(y, prob=df$p, size=n)
 df <- bayesian_crank(df)
-prior_post_plot(df, "Proportion")
+prior_post_plot(df, "red")
 }

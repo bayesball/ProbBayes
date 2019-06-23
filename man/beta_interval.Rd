@@ -8,7 +8,7 @@
   Computes Probability Interval for a Beta Curve
 }
 \usage{
-  beta_interval(prob, shape_par)
+  beta_interval(prob, shape_par, Color = "orange")
 }
 \arguments{
   \item{prob}{
@@ -16,6 +16,9 @@
   }
   \item{shape_par}{
     vector of shape parameters of the beta curve
+  }
+   \item{Color}{
+    color of shading in the graph
   }
 }
 
