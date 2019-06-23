@@ -1,5 +1,5 @@
-# TeachBayes
+# TeachBayes, Version 1.03
 Functions to Help Communicate Bayesian Inference
 
-This package provides functions to accompany the course Beginning Bayes offered on DataCamp.  There are functions to work with random
-spinners, and inference for normal means and binomial proportions.
+This package provides functions to accompany the text Probability and Bayesian Analysis by Jim Albert and Monika Hu.  There are functions to work with random
+spinners, Bayes' rule, and inference for a normal mean and a binomial proportion.
