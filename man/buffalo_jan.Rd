@@ -10,6 +10,15 @@
 \usage{
   buffalo_jan
 }
-\author{
-  Jim Albert
+\format{
+   A data frame with 20 observations on the following 2 variables.
+  \describe{
+  \item{SEASON}{Season}
+  \item{JAN}{inches of total snowfall}
+  }
 }
+\source{
+National Weather Service, www.weather.gov
+}
+\keyword{datasets}
+
