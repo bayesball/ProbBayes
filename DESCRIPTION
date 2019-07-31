@@ -1,7 +1,7 @@
-Package: TeachBayes
+Package: ProbBayes
 Type: Package
-Title: Teaching Bayesian Inference
-Version: 1.03
+Title: Probability and Bayesian Modeling
+Version: 1.05
 Authors@R: c(person("Jim Albert", email = "albert@bgsu.edu", role = c("aut", "cre")))
 Depends:  LearnBayes, ggplot2, gridExtra, dplyr, shiny
 Suggests: knitr, rmarkdown
