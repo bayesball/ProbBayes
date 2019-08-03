@@ -1,0 +1,11 @@
+Movie	Weekend	Gross
+Beauty_and_the_Beast	174	504
+The_Fate_of_the_Furious	99	226
+Despicable_Me_3	72	264
+Spider-Man_Homecoming	117	334
+Guardians_of_the-Galaxy_Vol_2.	147	389
+Thor_Ragnarok	122	315
+Wonder_Woman	103	413
+Pirates_of_the_Caribbean_Dead_Men_Tell_No_Tales	63	173
+It	123	327
+Justice_League	94	229
