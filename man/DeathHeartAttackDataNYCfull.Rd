@@ -13,6 +13,7 @@
 \format{
    A data frame with 45 observations on the following 5 variables.
   \describe{
+  \item{Hospital}{name of hospital}
   \item{Borough}{borough in New York City}
   \item{Type}{type of hospital}
   \item{Cases}{number of heart attach cases}

@@ -11,9 +11,9 @@
   DeathHeartAttackManhattan
 }
 \format{
-   A data frame with 13 observations on the following 5 variables.
+   A data frame with 13 observations on the following 4 variables.
   \describe{
-  \item{Borough}{borough in New York City}
+  \item{Hospital}{name of hospital}
   \item{Type}{type of hospital}
   \item{Cases}{number of heart attach cases}
   \item{Deaths}{number of deaths}

@@ -1,24 +1,24 @@
-\name{ScoreData}
-\alias{ScoreData}
+\name{arm_height}
+\alias{arm_height}
 
 \title{
-  Scores on Achievement Exam
+  Arm span and height measurements
 }
 \description{
-  Scores on a 20-question T/F exam
+  Arm span and height measurements for a sample of students
 }
 \usage{
-  ScoreData
+  arm_height
 }
 \format{
-   A data frame with 30 observations on the following 2 variables.
+   A data frame with 20 observations on the following 2 variables.
   \describe{
-  \item{Person}{subject id}
-  \item{Score}{number correct in 20-question exam}
+  \item{arm}{length of arm span in cm}
+  \item{height}{height in cm}
   }
 }
 \source{
-Data randomly generated.
+Sample of college students
 }
 \keyword{datasets}
 
