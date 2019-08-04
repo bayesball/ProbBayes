@@ -5,7 +5,7 @@
   Trend Estimates of Bird Populations
 }
 \description{
-  Trend Estimates for 28 Grassland Bird Spies
+  Trend Estimates for 28 Grassland Bird Species
 }
 \usage{
   BBS_survey
