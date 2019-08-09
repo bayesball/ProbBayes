@@ -11,7 +11,7 @@
   federalist_word_study
 }
 \format{
-   A data frame with 56932 observations on the following 6 variables.
+   A data frame with 56853 observations on the following 7 variables.
   \describe{
   \item{Name}{name of Federalist paper}
   \item{Total}{total number of words}
@@ -19,6 +19,7 @@
   \item{N}{frequency of the word}
   \item{Rate}{fraction of words with that word}
   \item{Authorship}{author of paper}
+  \item{Disputed}{is authorship disputed?}
   }
 }
 \source{
