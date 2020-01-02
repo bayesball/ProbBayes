@@ -18,7 +18,7 @@
   }
 }
 \source{
-Jeff Sackman
+https://github.com/JeffSackmann
 }
 \keyword{datasets}
 

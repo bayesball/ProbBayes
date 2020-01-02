@@ -19,7 +19,7 @@ Data on time to serve for six professional tennis players
   }
 }
 \source{
-Jeff Sackman
+https://github.com/JeffSackmann
 }
 \keyword{datasets}
 
