@@ -7,4 +7,5 @@ spinners, Bayes' rule, and inference for a normal mean and a binomial proportion
 One can install ProbBayes by typing the following in the Console window:
 
 library(devtools)
+
 install_github("bayesball/ProbBayes")
