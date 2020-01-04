@@ -5,9 +5,12 @@ Version: 1.05
 Authors@R: c(person("Jim Albert", email = "albert@bgsu.edu", role = c("aut", "cre")))
 Depends:  LearnBayes, ggplot2, gridExtra, dplyr, shiny
 Suggests: knitr, rmarkdown
+URL: https://github.com/bayesball/ProbBayes
+License: GPL (>= 2)
 Author: Jim Albert
 Maintainer: Jim Albert <albert@bgsu.edu>
-Description: Several functions for communicating Bayesian thinking including Bayes rule for deciding among spinners, visualizations for Bayesian inference for one proportion and for one mean, and comparison of two proportions using a discrete prior.
+Packaged:  2020-01-03
+Description: Functions for communicating Bayesian thinking including Bayes rule for deciding among spinners, visualizations for Bayesian inference for one proportion and for one mean, and comparison of two proportions using a discrete prior.
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
