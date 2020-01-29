@@ -1,6 +1,6 @@
 beta_prior_post <- function(prior_shapes, post_shapes,
-                            label_1="1 Prior",
-                            label_2="2 Posterior"){
+                            label_1="Prior",
+                            label_2="Posterior"){
   TH <- theme(
     plot.title = element_text(
       colour = "blue",
@@ -21,7 +21,7 @@ ggplot(data.frame(x=c(0, 1)), aes(x)) +
                 args=list(shape1=post_shapes[1],
                           shape2=post_shapes[2])) +
   scale_colour_manual(values=c("blue", "red"),
-                      labels = c("Prior", "Posterior")) +
+                      labels = c(label_1, label_2)) +
   labs(colour = "Type") +
   xlab("P") + ylab("Density")
 }

@@ -3,7 +3,7 @@ Type: Package
 Title: Probability and Bayesian Modeling
 Version: 1.05
 Authors@R: c(person("Jim Albert", email = "albert@bgsu.edu", role = c("aut", "cre")))
-Depends:  LearnBayes, ggplot2, gridExtra, dplyr, shiny
+Depends:  LearnBayes, ggplot2, gridExtra, shiny
 Suggests: knitr, rmarkdown
 URL: https://github.com/bayesball/ProbBayes
 License: GPL (>= 2)

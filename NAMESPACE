@@ -5,4 +5,4 @@ importFrom("stats", "dbeta", "dbinom", "dnorm", "pbeta", "pnorm",
 importFrom("stats", "rbinom", "rgamma", "rnorm", "runif")
 importFrom("LearnBayes", "beta.select", "normal.select")
 importFrom("gridExtra", "grid.arrange")
-import("dplyr", "ggplot2", "shiny")
+import("ggplot2", "shiny")
