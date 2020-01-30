@@ -1,16 +1,15 @@
 Package: ProbBayes
 Type: Package
 Title: Probability and Bayesian Modeling
-Version: 1.05
-Authors@R: c(person("Jim Albert", email = "albert@bgsu.edu", role = c("aut", "cre")))
+Version: 1.1
+Author: Jim Albert <albert@bgsu.edu>
+Maintainer: Jim Albert <albert@bgsu.edu>
 Depends:  LearnBayes, ggplot2, gridExtra, shiny
 Suggests: knitr, rmarkdown
 URL: https://github.com/bayesball/ProbBayes
 License: GPL (>= 2)
-Author: Jim Albert
-Maintainer: Jim Albert <albert@bgsu.edu>
-Packaged:  2020-01-03
-Description: Functions for communicating Bayesian thinking including Bayes rule for deciding among spinners, visualizations for Bayesian inference for one proportion and for one mean, and comparison of two proportions using a discrete prior.
+Packaged:  2020-01-29
+Description: Functions for communicating Bayesian thinking including Bayes rule for deciding among spinners, visualizations for Bayesian inference for one proportion and for one mean, and basic MCMC functions (Albert and Hu (2019)).
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true

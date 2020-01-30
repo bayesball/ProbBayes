@@ -8,7 +8,7 @@
 Number of visits to a blog website for different weeks and days of the week
 }
 \usage{
-  web_visit
+  web_visits
 }
 \format{
    A data frame with 28 observations on the following 3 variables.
