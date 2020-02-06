@@ -20,7 +20,7 @@
 }
 
 \value{
-  A vector of random spins from the spinner
+  A vector of random draws from the beta distribution
 }
 \author{
   Jim Albert

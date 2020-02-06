@@ -14,9 +14,6 @@
   \item{shape_pars}{
     vector of shape parameters of the beta curve
   }
-  \item{...}{
-    add a title to the graph if desired
-  }
 }
 
 \value{
