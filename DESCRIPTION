@@ -8,8 +8,8 @@ Depends:  LearnBayes, ggplot2, gridExtra, shiny
 Suggests: knitr, rmarkdown
 URL: https://github.com/bayesball/ProbBayes
 License: GPL (>= 2)
-Packaged:  2020-01-29
-Description: Functions for communicating Bayesian thinking including Bayes rule for deciding among spinners, visualizations for Bayesian inference for one proportion and for one mean, and basic MCMC functions (Albert and Hu (2019)).
+Packaged:  2020-02-11
+Description: Functions and datasets  to accompany J. Albert and J. Hu, "Probability and Bayesian Modeling", CRC Press, (2019, ISBN: 1138492566).
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
