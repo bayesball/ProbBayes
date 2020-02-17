@@ -1,4 +1,4 @@
-school	score
+school	hours
 1	2.11
 1	9.75
 1	13.88

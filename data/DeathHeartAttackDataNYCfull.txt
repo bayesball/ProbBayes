@@ -14,7 +14,7 @@ Kingsbrook_Jewish_Medical_Center	Brooklyn	N	128	13
 Maimonides_Medical_Center	Brooklyn	P	727	46
 Mount_Sinai_Brooklyn	Brooklyn	N	179	22
 NYU_Luteran_Medical_Center	Brooklyn	P	145	9
-"New_York_Community_Hospital_of_Brooklyn,_Inc"	Brooklyn	N	92	6
+New_York_Community_Hospital_of_Brooklyn,_Inc	Brooklyn	N	92	6
 New_York_Methodist_Hospital	Brooklyn	P	402	26
 University_Hospital_of_Brooklyn	Brooklyn	P	190	21
 Woodhull_Medical_&_Mental_Health_Center	Brooklyn	N	98	6

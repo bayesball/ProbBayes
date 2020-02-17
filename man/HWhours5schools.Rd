@@ -14,7 +14,7 @@
    A data frame with 116 observations on the following 2 variables.
   \describe{
   \item{school}{school number of student}
-  \item{score}{weekly hours spent on homework}
+  \item{hours}{weekly hours spent on homework}
   }
 }
 \source{
