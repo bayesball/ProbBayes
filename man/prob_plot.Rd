@@ -30,7 +30,7 @@
 }
 
 \examples{
-  probability_df <- data.frame(x=1:5,
+  d <- data.frame(x=1:5,
          Probability=c(.1, .2, .3, .3, .1))
-  prob_plot(probability_df)
+  prob_plot(d)
 }

@@ -27,6 +27,6 @@
 }
 
 \examples{
-  Prob <- testing_prior()
-  draw_two_p(Prob, title="Testing Prior")
+  prob_matrix <- testing_prior()
+  draw_two_p(prob_matrix, title="Testing Prior")
 }

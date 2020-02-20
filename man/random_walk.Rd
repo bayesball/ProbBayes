@@ -28,4 +28,13 @@
 \author{
   Jim Albert
 }
+\examples{
+# random walk through a binomial distribution
+pd <- function(x){
+  dbinom(x, size = 10, prob = 0.5)
+}
+start <- 4
+num_steps <- 50
+out <- random_walk(pd, start, num_steps)
+}
 

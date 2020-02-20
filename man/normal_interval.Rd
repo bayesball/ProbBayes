@@ -30,7 +30,7 @@
 }
 
 \examples{
-  parameters <- c(2, 0.5)
-  prob_content <- 0.5
-  normal_interval(prob_content, parameters)
+  normal_pars <- c(2, 0.5)
+  prob <- 0.5
+  normal_interval(prob, normal_pars)
 }

@@ -30,6 +30,6 @@
 }
 
 \examples{
-  parameters <- c(2, 5)
-  beta_interval(.5, parameters)
+  shape_par <- c(2, 5)
+  beta_interval(.5, shape_par)
 }

@@ -32,9 +32,9 @@
 \examples{
   # find the .50 quantile (the median)
   prob <- 0.5
-  parameters <- c(2, 5)
-  beta_quantile(prob, parameters)
+  shape_par <- c(2, 5)
+  beta_quantile(prob, shape_par)
   # find the .90 quantile (90th percentile)
   prob <- 0.9
-  beta_quantile(prob, parameters)
+  beta_quantile(prob, shape_par)
 }

@@ -26,5 +26,6 @@
 \examples{
   sp1 <- c(2, 1, 1)
   sp2 <- c(1, 1, 1, 1)
-  spinner_likelihoods(list(sp1, sp2))
+  regions <- list(sp1, sp2)
+  spinner_likelihoods(regions)
 }

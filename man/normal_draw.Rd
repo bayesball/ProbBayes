@@ -27,6 +27,6 @@
 }
 
 \examples{
-  parameters <- c(2, 1)
-  normal_draw(parameters)
+  normal_pars <- c(2, 1)
+  normal_draw(normal_pars)
 }

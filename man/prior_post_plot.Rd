@@ -27,11 +27,11 @@
 }
 
 \examples{
-df <- data.frame(p=c(.1, .3, .5, .7, .9),
+d <- data.frame(p=c(.1, .3, .5, .7, .9),
                  Prior=rep(1/5, 5))
 y <- 5
 n <- 10
-df$Likelihood <- dbinom(y, prob=df$p, size=n)
-df <- bayesian_crank(df)
-prior_post_plot(df, "red")
+d$Likelihood <- dbinom(y, prob=d$p, size=n)
+d <- bayesian_crank(d)
+prior_post_plot(d, "red")
 }

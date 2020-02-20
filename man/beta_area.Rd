@@ -35,6 +35,6 @@
 \examples{
   lo <- .2
   hi <- .4
-  parameters <- c(2, 5)
-  beta_area(lo, hi, parameters)
+  shape_par <- c(2, 5)
+  beta_area(lo, hi, shape_par)
 }

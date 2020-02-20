@@ -27,6 +27,6 @@
 }
 
 \examples{
-  sp <- c(2, 1, 1, 2)
-  spinner_data(sp, nsim=20)
+  regions <- c(2, 1, 1, 2)
+  spinner_data(regions, nsim=20)
 }

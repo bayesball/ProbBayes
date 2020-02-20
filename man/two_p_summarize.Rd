@@ -25,6 +25,6 @@
 
 \examples{
   # use uniform prior over values .2, .3, .4
-  prior <- testing_prior(.2, .4, 3, uniform=TRUE)
-  two_p_summarize(prior)
+  prob_matrix <- testing_prior(.2, .4, 3, uniform=TRUE)
+  two_p_summarize(prob_matrix)
 }

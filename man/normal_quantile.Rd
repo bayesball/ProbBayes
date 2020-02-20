@@ -30,7 +30,7 @@
 }
 
 \examples{
-  parameters <- c(100, 10)
-  prob_value <- 0.7
-  normal_quantile(prob_value, parameters)
+  normal_pars <- c(100, 10)
+  prob <- 0.7
+  normal_quantile(prob, normal_pars)
 }

@@ -24,6 +24,6 @@
 }
 
 \examples{
-  sp <- c(2, 1, 1, 2)
-  spinner_probs(sp)
+  regions <- c(2, 1, 1, 2)
+  spinner_probs(regions)
 }

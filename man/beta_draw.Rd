@@ -24,6 +24,6 @@
 }
 
 \examples{
-  parameters <- c(2, 5)
-  beta_draw(parameters)
+  shape_pars <- c(2, 5)
+  beta_draw(shape_pars)
 }

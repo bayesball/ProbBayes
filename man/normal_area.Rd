@@ -35,6 +35,6 @@
 \examples{
   lo <- 10
   hi <- 20
-  parameters <- c(25, 10)
-  normal_area(lo, hi, parameters)
+  normal_pars <- c(25, 10)
+  normal_area(lo, hi, normal_pars)
 }

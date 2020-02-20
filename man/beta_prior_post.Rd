@@ -27,5 +27,7 @@
 }
 
 \examples{
- beta_prior_post(c(4, 6), c(19, 16))
+ prior_shapes <- c(4, 6)
+ post_shapes <- c(19, 16)
+ beta_prior_post(prior_shapes, post_shapes)
 }
