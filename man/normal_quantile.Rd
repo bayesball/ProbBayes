@@ -23,7 +23,7 @@
 }
 
 \value{
- Displays the quantile of a normal curve corresponding to a specific probability value
+  ggplot2 object containing the graphical display.
 }
 \author{
   Jim Albert

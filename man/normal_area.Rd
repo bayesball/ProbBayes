@@ -26,7 +26,7 @@
 }
 
 \value{
-  Probability that normal random variable falls between two values
+  ggplot2 object containing the graphical display.
 }
 \author{
   Jim Albert

@@ -17,7 +17,7 @@
 }
 
 \value{
-  Displays the beta curve
+  ggplot2 object containing the graphical display.
 }
 \author{
   Jim Albert

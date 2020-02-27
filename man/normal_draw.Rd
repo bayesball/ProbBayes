@@ -20,7 +20,7 @@
 }
 
 \value{
-  Displays the normal curve
+  ggplot2 object containing the graphical display.
 }
 \author{
   Jim Albert

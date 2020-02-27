@@ -20,7 +20,7 @@
 }
 
 \value{
- Displays the two beta curves on the same panel
+  ggplot2 object containing the graphical display.
 }
 \author{
   Jim Albert

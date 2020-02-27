@@ -15,6 +15,7 @@ centertitle(Color = "blue")
     color of the text in the ggplot2 title
   }
 }
+\value{ggplot2 theme code to center the title}
 \author{
   Jim Albert
 }

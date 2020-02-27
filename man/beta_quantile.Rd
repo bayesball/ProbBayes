@@ -23,7 +23,7 @@
 }
 
 \value{
- Displays the quantile of a beta curve corresponding to the probability value
+  ggplot2 object containing the graphical display.
 }
 \author{
   Jim Albert

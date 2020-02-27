@@ -20,7 +20,7 @@
 }
 
 \value{
-  Constructs a comparative plot of the prior and posterior distributions using separate panels.
+  ggplot2 object containing the graphical display.
 }
 \author{
   Jim Albert

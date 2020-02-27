@@ -20,7 +20,7 @@
 }
 
 \value{
-  A frequency bar graph of the outcomes
+  A ggplot2 object containing the bar graph.
 }
 \author{
   Jim Albert

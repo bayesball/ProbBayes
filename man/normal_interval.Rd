@@ -23,7 +23,7 @@
 }
 
 \value{
-  Computes and displays the interval that contains the normal curve with the specified probability
+  ggplot2 object containing the graphical display.
 }
 \author{
   Jim Albert

@@ -15,6 +15,7 @@ Increases font size of text
     font size of all textual elements in a ggplot2 graphic
   }
 }
+\value{ggplot2 theme code to increase the font size}
 \author{
   Jim Albert
 }

@@ -10,6 +10,7 @@
 \usage{
   ChooseBeta()
 }
+\value{None}
 \author{
   Jim Albert
 }

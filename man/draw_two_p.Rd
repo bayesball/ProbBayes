@@ -20,7 +20,7 @@
 }
 
 \value{
-  graphical display of the joint probability distribution
+  ggplot2 object containing the graphical display.
 }
 \author{
   Jim Albert

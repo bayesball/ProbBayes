@@ -17,7 +17,7 @@
 }
 
 \value{
- Displays the normal curves on a single panel
+  ggplot2 object containing the graphical display.
 }
 \author{
   Jim Albert

@@ -23,7 +23,7 @@
 }
 
 \value{
-  Computes and displays the "equal tails" interval that contains the beta curve with the specified probability
+  ggplot2 object containing the graphical display.
 }
 \author{
   Jim Albert
