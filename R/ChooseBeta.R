@@ -1,8 +1,8 @@
 ChooseBeta <- function() {
   appDir <- system.file("shiny-examples", "ChooseBetaPrior",
-                        package = "TeachBayes")
+                        package = "ProbBayes")
   if (appDir == "") {
-    stop("Could not find example directory. Try re-installing `TeachBayes`.", call. = FALSE)
+    stop("Could not find example directory. Try re-installing `ProbBayes`.", call. = FALSE)
   }
 
   shiny::runApp(appDir, display.mode = "normal")
