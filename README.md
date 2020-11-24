@@ -14,3 +14,7 @@ You can install the developmental version of ProbBayes by typing
 library(remotes)
 
 install_github("bayesball/ProbBayes")
+
+An introduction to the ProbBayes package:
+
+https://bayesball.github.io/Intro_ProbBayes.html
